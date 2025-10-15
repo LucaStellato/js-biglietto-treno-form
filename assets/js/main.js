@@ -24,10 +24,10 @@ formEl.addEventListener('submit', (event) => {
 
     if (ageField.textContent < 18) {
         const priceFinal = price * (1 - 20 / 100);
-        console.log(priceFinal)
+        console.log(priceFinal.toFixed(2))
     } else if (ageField.textContent >= 65) {
         const priceFinal = price * (1 - 40 / 100);
-        console.log(priceFinal)
+        console.log(priceFinal.toFixed(2))
     }
 
 
