@@ -4,6 +4,7 @@ const nameSurnameField = document.getElementById('name-surname-field')
 const kmField = document.getElementById('km-field')
 const ageField = document.getElementById('age-field')
  const priceFinal = 0;
+ const solution = document.getElementById('solution')
 //Milestone-1
 console.log(nameSurnameField, kmField, ageField)
 
@@ -41,15 +42,17 @@ Questo richiederà un minimo di ricerca.
     if (ageField.textContent < 18) {
         const priceFinal = price * (1 - 20 / 100);
         console.log(priceFinal.toFixed(2))
+         solution.innerHTML= `<h3>il prezzo finale é di ${priceFinal}</h3>`
 
     } else if (ageField.textContent >= 65) {
         const priceFinal = price * (1 - 40 / 100);
         console.log(priceFinal.toFixed(2))
+        solution.innerHTML= `<h3>il prezzo finale é di ${priceFinal}</h3>`
     }
 
 
 
-return priceFinal;
+
 
 
 
@@ -57,9 +60,6 @@ return priceFinal;
 
 
 })
-
- const solution = document.createElement('h3')
-solution.textContent=`Il prezzo scontato é ${priceFinal.toFixed(2)}`
 
 
 
