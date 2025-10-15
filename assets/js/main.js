@@ -3,8 +3,8 @@ const formEl = document.getElementById('formEl')
 const nameSurnameField = document.getElementById('name-surname-field')
 const kmField = document.getElementById('km-field')
 const ageField = document.getElementById('age-field')
- const priceFinal = 0;
- const solution = document.getElementById('solution')
+const priceFinal = 0;
+const solution = document.getElementById('solution')
 //Milestone-1
 console.log(nameSurnameField, kmField, ageField)
 
@@ -35,19 +35,19 @@ Questo richiederà un minimo di ricerca.
 
 
     const rate = 0.21
-   
+
     const price = kmField.value * rate
-   
+
 
     if (ageField.textContent < 18) {
         const priceFinal = price * (1 - 20 / 100);
         console.log(priceFinal.toFixed(2))
-         solution.innerHTML= `<h3>il prezzo finale é di ${priceFinal}</h3>`
+        solution.innerHTML = `<h3>il prezzo finale é di ${priceFinal.toFixed(2)}</h3>`
 
     } else if (ageField.textContent >= 65) {
         const priceFinal = price * (1 - 40 / 100);
         console.log(priceFinal.toFixed(2))
-        solution.innerHTML= `<h3>il prezzo finale é di ${priceFinal}</h3>`
+        solution.innerHTML = `<h3>il prezzo finale é di ${priceFinal.toFixed(2)}</h3>`
     }
 
 
