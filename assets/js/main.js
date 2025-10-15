@@ -30,5 +30,11 @@ andranno quindi stampati in pagina
 per indicare i centesimi sul prezzo). 
 Questo richiederà un minimo di ricerca.
 */
+const rate=0.21
+const priceFinal=0;
+const price=km.value*rate
 
 
+if(ageField.value<18){
+const priceFinal = price * (1 - 20 / 100);
+}
