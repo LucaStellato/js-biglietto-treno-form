@@ -48,13 +48,13 @@ formEl.addEventListener('submit', (event) => {
     const price = kmField.value * rate
       let priceFinal = parseFloat(price)
     //condition price
-    if (ageField.textContent >= 65) {
-        priceFinal = price * (1 - 20 / 100);
+    if (age >= 65) {
+        priceFinal = price * (1 - 40 / 100);
         console.log(priceFinal.toFixed(2))
 
 
-    } else if (ageField.textContent < 18) {
-        priceFinal = price * (1 - 40 / 100);
+    } else if (age < 18) {
+        priceFinal = price * (1 - 20 / 100);
         console.log(priceFinal.toFixed(2))
 
     }
