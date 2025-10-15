@@ -17,6 +17,28 @@ formEl.addEventListener('submit', (event) => {
     console.log(nameSurname);
     console.log(km);
     console.log(age);
+
+    const rate = 0.21
+    const priceFinal = 0;
+    const price = kmField.value * rate
+
+    if (ageField.textContent < 18) {
+        const priceFinal = price * (1 - 20 / 100);
+        console.log(priceFinal)
+    } else if (ageField.textContent >= 65) {
+        const priceFinal = price * (1 - 40 / 100);
+        console.log(priceFinal)
+    }
+
+
+
+
+
+
+
+
+
+
 })
 //Milestone-1
 
@@ -30,11 +52,8 @@ andranno quindi stampati in pagina
 per indicare i centesimi sul prezzo). 
 Questo richiederà un minimo di ricerca.
 */
-const rate=0.21
-const priceFinal=0;
-const price=km.value*rate
 
 
-if(ageField.value<18){
-const priceFinal = price * (1 - 20 / 100);
-}
+
+
+
