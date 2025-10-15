@@ -5,26 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>train ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-secondary">
 <header>
   
 </header>
-<main>
+<main class=" ">
+    
+     <h1 class="text-center">Inserisci i tuoi dati</h1>
+    <div class="form  d-flex  justify-content-center">
+       
     <form id="formEl">
-        <input class="form-control" placeholder="Nome e Cognome" type="text" id="name-surname-field" />
+        <input class="form-control mb-3 mt-5" placeholder="Nome e Cognome" type="text" id="name-surname-field" />
 
 
-        <input class="form-control" placeholder="km da percorrere" type="text" id="km-field" />
+        <input class="form-control mb-3" placeholder="km da percorrere" type="text" id="km-field" />
 
-        <input class="form-control" placeholder="fascia di etá" type="text" id="age-field" />
+        <input class="form-control mb-3" placeholder="fascia di etá" type="text" id="age-field" />
 
-        <button id="button" class=''>Submit</button>
+        <button id="button" class='btn btn-primary'>Submit</button>
 
 
     </form>
-    <div id="solution"></div>
+    </div>
+    <div id="solution" class="text-center mt-4"></div>
 
 
 
@@ -33,6 +39,7 @@
 </main>
 
     <script src="./assets/js/main.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>
